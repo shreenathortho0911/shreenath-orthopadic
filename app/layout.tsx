@@ -1,3 +1,6 @@
+import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
+import QueryProvider from "@/providers/query-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,11 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        <QueryProvider>{children}</QueryProvider>
+        <Footer />
+      </body>
     </html>
   );
 }

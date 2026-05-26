@@ -9,9 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@phosphor-icons/react": "^2.1.10",
+    "@sanity/icons": "^3.7.4",
+    "@sanity/vision": "^5.26.0",
+    "@tanstack/react-query": "^5.100.14",
+    "axios": "^1.16.1",
+    "formik": "^2.4.9",
+    "framer-motion": "^12.39.0",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "styled-components": "^6.4.2",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
