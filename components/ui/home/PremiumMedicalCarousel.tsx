@@ -10,6 +10,7 @@ import {
 } from "@phosphor-icons/react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const slides = [
@@ -20,7 +21,7 @@ const slides = [
     smallSubtitle: "Trusted Orthopedic Specialists",
     description:
       "Comprehensive orthopedic treatments focused on restoring mobility, reducing pain, and helping patients return to active living.",
-    image: "",
+    image: "/carousel/seven.png",
     badge: "Orthopedics",
   },
 
@@ -30,7 +31,7 @@ const slides = [
     subtitle: "Get Back To Peak Performance",
     description:
       "Specialized care for ligament injuries, fractures, muscle tears, and sports rehabilitation with advanced recovery programs.",
-    image: "",
+    image: "/carousel/eight.png",
     badge: "Sports Medicine",
   },
 
@@ -40,7 +41,7 @@ const slides = [
     subtitle: "Move Better. Live Pain Free.",
     description:
       "Modern robotic-assisted knee and hip replacement surgeries designed for faster recovery and long-term comfort.",
-    image: "",
+    image: "/carousel/nine.png",
     badge: "Joint Replacement",
   },
 ];
@@ -97,11 +98,11 @@ export default function PremiumMedicalCarousel() {
                 alt={slides[current].title}
                 fill
                 priority
-                className="object-cover scale-105 transition-transform duration-7000"
+                className="object-cover md:object-cover object-[center_top] md:object-center scale-100 sm:scale-105 transition-transform duration-7000"
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primaryOrtho/95 via-primaryOrtho/75 to-primaryOrtho/25" />
+              <div className="absolute inset-0 bg-linear-to-r from-primaryOrtho/95 via-primaryOrtho/75 to-primaryOrtho/25" />
 
               {/* Pattern */}
               <div className="absolute inset-0 opacity-[0.04]">
@@ -200,9 +201,12 @@ export default function PremiumMedicalCarousel() {
                       className="mt-8 flex flex-wrap items-center gap-4"
                     >
                       {/* Primary */}
-                      <button className="group relative overflow-hidden rounded-full bg-secondaryOrtho px-7 py-4 text-sm font-semibold text-tertiaryOrtho shadow-[0_10px_30px_rgba(248,123,27,0.35)] transition-all cursor-pointer duration-300 hover:scale-[1.03] md:text-base">
+                      <Link
+                        href={"/treatments"}
+                        className="group relative overflow-hidden rounded-full bg-secondaryOrtho px-7 py-4 text-sm font-semibold text-tertiaryOrtho shadow-[0_10px_30px_rgba(248,123,27,0.35)] transition-all cursor-pointer duration-300 hover:scale-[1.03] md:text-base"
+                      >
                         <span className="relative z-10 flex items-center gap-2">
-                          Explore Services
+                          Explore Treatments
                           <ArrowRight
                             size={18}
                             weight="bold"
@@ -211,13 +215,16 @@ export default function PremiumMedicalCarousel() {
                         </span>
 
                         <div className="absolute inset-0 translate-y-full bg-tertiaryOrtho/20 transition-transform duration-300 group-hover:translate-y-0" />
-                      </button>
+                      </Link>
 
                       {/* Secondary */}
-                      <button className="group cursor-pointer flex items-center gap-2 rounded-full border border-tertiaryOrtho/20 bg-tertiaryOrtho/10 px-7 py-4 text-sm font-semibold text-tertiaryOrtho backdrop-blur-xl transition-all duration-300 hover:border-tertiaryOrtho/40 hover:bg-tertiaryOrtho hover:text-primaryOrtho md:text-base">
+                      <Link
+                        href={"/contact#appointment"}
+                        className="group cursor-pointer flex items-center gap-2 rounded-full border border-tertiaryOrtho/20 bg-tertiaryOrtho/10 px-7 py-4 text-sm font-semibold text-tertiaryOrtho backdrop-blur-xl transition-all duration-300 hover:border-tertiaryOrtho/40 hover:bg-tertiaryOrtho hover:text-primaryOrtho md:text-base"
+                      >
                         <Stethoscope size={18} weight="bold" />
                         Book Appointment
-                      </button>
+                      </Link>
                     </motion.div>
                   </div>
 
@@ -296,7 +303,7 @@ export default function PremiumMedicalCarousel() {
           {/* LEFT ARROW */}
           <button
             onClick={prevSlide}
-            className="group absolute cursor-pointer left-0.5 lg:left-4 top-1/2 z-30 flex h-8 w-8 md:h-10 md:w-10 -translate-y-1/2 items-center justify-center rounded-full bg-primaryOrtho/70 text-tertiaryOrtho backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:bg-secondaryOrtho"
+            className="group absolute cursor-pointer left-0.5 lg:left-4 top-1/2 z-30 flex h-8 w-8 md:h-10 md:w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondaryOrtho/70 text-tertiaryOrtho backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:bg-secondaryOrtho"
           >
             <CaretLeft
               size={24}
@@ -308,7 +315,7 @@ export default function PremiumMedicalCarousel() {
           {/* RIGHT ARROW */}
           <button
             onClick={nextSlide}
-            className="group absolute cursor-pointer  right-0.5  lg:right-4 top-1/2 z-30 flex h-8 w-8 md:h-10 md:w-10 -translate-y-1/2 items-center justify-center rounded-full bg-primaryOrtho/70 text-tertiaryOrtho backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:bg-secondaryOrtho"
+            className="group absolute cursor-pointer  right-0.5  lg:right-4 top-1/2 z-30 flex h-8 w-8 md:h-10 md:w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondaryOrtho/70 text-tertiaryOrtho backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:bg-secondaryOrtho"
           >
             <CaretRight
               size={24}

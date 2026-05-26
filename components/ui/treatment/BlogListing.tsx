@@ -95,7 +95,7 @@ export default function BlogListing() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-tertiaryOrtho ">
+    <section className="relative overflow-hidden pb-10 bg-tertiaryOrtho ">
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-150px] right-[-100px] w-[400px] h-[400px] md:w-[500px] md:h-[500px] rounded-full bg-secondaryOrtho/10 blur-3xl" />

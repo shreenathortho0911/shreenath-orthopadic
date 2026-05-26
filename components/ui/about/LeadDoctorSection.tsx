@@ -82,47 +82,72 @@ export default function LeadDoctorSection({
               transition={{
                 duration: 0.45,
               }}
-              className="relative"
+              className="relative overflow-hidden"
             >
               {/* Image */}
-              <div className="relative h-full min-h-[420px] lg:min-h-[580px]">
-                <Image src={image} alt={name} fill className="object-cover" />
+              <div className="relative h-[420px] sm:min-h-[720px] lg:min-h-[580px]">
+                <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  priority
+                  className="object-cover object-top scale-[1.02] sm:scale-100"
+                />
 
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primaryOrtho via-primaryOrtho/20 to-transparent" />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primaryOrtho via-primaryOrtho/15 to-transparent" />
 
-                {/* Bottom Content */}
-                <div className="absolute bottom-0 left-0 w-full p-6 sm:p-8">
-                  {/* Experience */}
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-xl">
-                    <div className="h-2 w-2 rounded-full bg-secondaryOrtho" />
+                {/* Mobile Overlay */}
+                <div className="absolute bottom-0 left-0 h-[38%] w-full bg-gradient-to-t from-primaryOrtho via-primaryOrtho/90 to-transparent sm:hidden" />
 
-                    <span className="text-xs font-bold uppercase tracking-[0.18em] text-white">
-                      {experience} Experience
-                    </span>
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 z-10 w-full p-4 sm:p-8">
+                  {/* MOBILE */}
+                  <div className="sm:hidden">
+                    <div className="rounded-[24px] bg-black/20 p-4 backdrop-blur-xl">
+                      <h2 className="text-[18px] font-black leading-[0.95] tracking-[-0.05em] text-white">
+                        {name}
+                      </h2>
+
+                      <p className="mt-3 text-[9px] font-bold uppercase leading-relaxed tracking-[0.16em] text-secondaryOrtho">
+                        {qualification}
+                      </p>
+                    </div>
                   </div>
 
-                  {/* Name */}
-                  <h2 className="mt-5 text-3xl font-black leading-[1.02] tracking-[-0.05em] text-white sm:text-4xl">
-                    {name}
-                  </h2>
+                  {/* DESKTOP */}
+                  <div className="hidden sm:block">
+                    {/* Experience */}
+                    <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-xl">
+                      <div className="h-2 w-2 rounded-full bg-secondaryOrtho" />
 
-                  {/* Qualification */}
-                  <p className="mt-3 text-sm font-semibold uppercase tracking-[0.14em] text-secondaryOrtho">
-                    {qualification}
-                  </p>
+                      <span className="text-xs font-bold uppercase tracking-[0.18em] text-white">
+                        {experience} Experience
+                      </span>
+                    </div>
 
-                  {/* Socials */}
-                  <div className="mt-6 flex items-center gap-3">
-                    {[InstagramLogo, LinkedinLogo, TwitterLogo].map((Icon, index) => (
-                      <Link
-                        key={index}
-                        href="#"
-                        className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-xl transition-all duration-300 hover:bg-secondaryOrtho"
-                      >
-                        <Icon size={18} weight="fill" />
-                      </Link>
-                    ))}
+                    {/* Name */}
+                    <h2 className="mt-5 text-4xl font-black leading-[1.02] tracking-[-0.05em] text-white">
+                      {name}
+                    </h2>
+
+                    {/* Qualification */}
+                    <p className="mt-3 max-w-[90%] text-sm font-semibold uppercase tracking-[0.14em] text-secondaryOrtho">
+                      {qualification}
+                    </p>
+
+                    {/* Socials */}
+                    <div className="mt-6 flex flex-wrap items-center gap-3">
+                      {[InstagramLogo, LinkedinLogo, TwitterLogo].map((Icon, index) => (
+                        <Link
+                          key={index}
+                          href="#"
+                          className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-xl transition-all duration-300 hover:bg-secondaryOrtho"
+                        >
+                          <Icon size={18} weight="fill" />
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

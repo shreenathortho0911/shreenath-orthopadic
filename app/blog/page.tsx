@@ -5,27 +5,27 @@ import { generateBreadcrumbSchema, generatePageMetadata } from "@/lib/metadata-g
 import type { Metadata } from "next";
 
 export const metadata: Metadata = generatePageMetadata({
-  page: "treatments",
+  page: "blog",
 });
 
-// Breadcrumb schema for treatments page
+// Breadcrumb schema for blog page
 const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: "/" },
-  { name: "Treatments", url: "/treatments" },
+  { name: "Blog", url: "/blog" },
 ]);
 
-const TreatmentsPage = () => {
+const BlogPage = () => {
   return (
     <div className="mt-20">
       <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
-        title="Advanced Orthopedic Treatment Solutions"
-        currentPage="Treatment"
-        description="Specialized care focused on pain relief, recovery, and better mobility."
+        title="Orthopedic Health Tips & Articles"
+        currentPage="Blog"
+        description="Expert insights, recovery tips, and health articles from Shreenath Orthopedic Hospital."
       />
       <BlogListing />
     </div>
   );
 };
 
-export default TreatmentsPage;
+export default BlogPage;

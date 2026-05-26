@@ -3,6 +3,7 @@
 import SectionHeader from "@/components/common/SectionHeader";
 import { ArrowRight, Bone, Heartbeat, PersonSimpleRun, Pulse } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const treatments = [
   {
@@ -288,14 +289,17 @@ export default function TreatmentsSection() {
           viewport={{ once: true }}
           className="mt-14 flex justify-center"
         >
-          <button className="group flex cursor-pointer items-center gap-3 rounded-full bg-[#11224e] px-7 py-4 text-sm font-semibold text-white shadow-[0_15px_35px_rgba(17,34,78,0.12)] transition-all duration-300 hover:bg-[#f87b1b] sm:text-base">
+          <Link
+            href={"/treatments"}
+            className="group flex cursor-pointer items-center gap-3 rounded-full bg-[#11224e] px-7 py-4 text-sm font-semibold text-white shadow-[0_15px_35px_rgba(17,34,78,0.12)] transition-all duration-300 hover:bg-[#f87b1b] sm:text-base"
+          >
             View All Treatments
             <ArrowRight
               size={18}
               weight="bold"
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

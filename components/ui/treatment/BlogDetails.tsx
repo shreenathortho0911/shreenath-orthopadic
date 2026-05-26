@@ -105,7 +105,7 @@ export default function BlogDetails({ blogId }: BlogDetailsProps) {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-primaryOrtho/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto sm:px-6 lg:px-8">
         {/* Main Grid - Left Content (2/3), Right Sticky Sidebar (1/3) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Main Content */}
@@ -127,7 +127,7 @@ export default function BlogDetails({ blogId }: BlogDetailsProps) {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primaryOrtho to-primaryOrtho/80 text-white font-semibold hover:shadow-lg hover:from-primaryOrtho hover:to-primaryOrtho transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-md"
               >
                 <ArrowLeft size={20} weight="bold" />
-                Back to Blogs
+                All Treatments
               </Link>
             </motion.div>
 

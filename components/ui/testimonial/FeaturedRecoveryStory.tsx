@@ -121,7 +121,7 @@ export default function FeaturedRecoveryStory() {
               <div className="relative overflow-hidden rounded-[32px]">
                 <div className="relative h-[300px] md:h-[500px]">
                   <Image
-                    src="/images/testimonial/patient-story.jpg"
+                    src="/testimonial/one.png"
                     alt="Recovery Story"
                     fill
                     className="object-cover"
@@ -161,9 +161,15 @@ export default function FeaturedRecoveryStory() {
                             px-4 py-2
                           "
                         >
-                          <Icon size={15} weight="fill" className="text-secondaryOrtho" />
+                          <Icon
+                            size={15}
+                            weight="fill"
+                            className="text-secondaryOrtho hidden md:block"
+                          />
 
-                          <span className="text-xs font-semibold text-white">{item.label}</span>
+                          <span className="text-xs hidden md:block  font-semibold text-white">
+                            {item.label}
+                          </span>
                         </div>
                       );
                     })}
@@ -171,16 +177,16 @@ export default function FeaturedRecoveryStory() {
 
                   {/* Text */}
                   <div className="absolute bottom-0 left-0 w-full p-6 md:p-8">
-                    <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-secondaryOrtho">
+                    <p className="text-[11px]  hidden md:block font-bold uppercase tracking-[0.22em] text-secondaryOrtho">
                       Recovery Success Story
                     </p>
 
-                    <h3 className="mt-4 max-w-xl text-3xl md:text-5xl font-black leading-[1.02] tracking-[-0.05em] text-white">
+                    <h3 className="mt-4 max-w-xl text-xl md:text-5xl font-black leading-[1.02] tracking-[-0.05em] text-white">
                       From Pain To
                       <span className="text-secondaryOrtho"> Active Movement</span>
                     </h3>
 
-                    <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/70">
+                    <p className="mt-5 hidden md:block max-w-lg text-sm leading-relaxed text-white/70">
                       Personalized orthopedic rehabilitation focused on flexibility, strength, and
                       mobility restoration.
                     </p>

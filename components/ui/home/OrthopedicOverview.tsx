@@ -3,6 +3,7 @@
 import { Ambulance, ArrowRight, Buildings, Heartbeat, Stethoscope } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -105,7 +106,7 @@ export default function HospitalIntroSection() {
             </motion.p>
 
             {/* CTA */}
-            <motion.button
+            <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: 0.15 }}
@@ -114,13 +115,15 @@ export default function HospitalIntroSection() {
               whileTap={{ scale: 0.98 }}
               className="group mt-8 cursor-pointer inline-flex items-center gap-2 rounded-full bg-primaryOrtho px-7 py-4 text-sm font-semibold text-tertiaryOrtho shadow-[0_15px_40px_rgba(17,34,78,0.18)] transition-all duration-300 hover:bg-secondaryOrtho md:text-base"
             >
-              Explore Treatments
-              <ArrowRight
-                size={18}
-                weight="bold"
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </motion.button>
+              <Link href={"/facilities"} className="flex gap-3 justify-center items-center">
+                See Facilities
+                <ArrowRight
+                  size={18}
+                  weight="bold"
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </Link>
+            </motion.div>
           </div>
 
           {/* RIGHT IMAGE */}

@@ -1,0 +1,121 @@
+{
+  "name": "Shreenath Orthopedic Hospital",
+  "short_name": "Shreenath Orthopedic",
+  "description": "Leading orthopedic hospital in Ahmedabad offering advanced treatments, rehabilitation services, and experienced orthopedic care in Ahmedabad and Maninagar.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["medical", "healthcare"],
+  "screenshots": [
+    {
+      "src": "/screenshots/screenshot-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Shreenath Orthopedic Hospital Home"
+    },
+    {
+      "src": "/screenshots/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Hospital Services"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/android-chrome-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "Book Appointment",
+      "short_name": "Appointment",
+      "description": "Book an orthopedic consultation",
+      "url": "/contact?action=appointment",
+      "icons": [
+        {
+          "src": "/icons/appointment-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Find Treatments",
+      "short_name": "Treatments",
+      "description": "Browse orthopedic treatments",
+      "url": "/treatments",
+      "icons": [
+        {
+          "src": "/icons/treatments-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Contact hospital",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/icons/contact-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "screenshots_color": "#ffffff"
+}

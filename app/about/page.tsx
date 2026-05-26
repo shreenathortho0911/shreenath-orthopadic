@@ -1,4 +1,5 @@
 import BreadcrumbSection from "@/components/common/BreadcrumbSection";
+import { StructuredData } from "@/components/seo/StructuredData";
 import FAQSection from "@/components/ui/about/FAQSection";
 import InsuranceSupportSection from "@/components/ui/about/InsuranceSupportSection";
 import LeadDoctorSection from "@/components/ui/about/LeadDoctorSection";
@@ -7,10 +8,23 @@ import OurStorySection from "@/components/ui/about/OurStorySection";
 import RecoveryPhilosophySection from "@/components/ui/about/RecoveryPhilosophySection";
 import SpecialtiesSection from "@/components/ui/about/SpecialtiesSection";
 import WhyTrustUsSection from "@/components/ui/about/WhyTrustUsSection";
+import { generateBreadcrumbSchema, generatePageMetadata } from "@/lib/metadata-generator";
+import type { Metadata } from "next";
 
-const page = () => {
+export const metadata: Metadata = generatePageMetadata({
+  page: "about",
+});
+
+// Breadcrumb schema for about page
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "About Us", url: "/about" },
+]);
+
+const AboutPage = () => {
   return (
     <div className="mt-10">
+      <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
         title="About Shreenath Orthopedic Hospital"
         currentPage="About Us"
@@ -28,4 +42,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;
