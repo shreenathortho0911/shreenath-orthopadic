@@ -4,13 +4,7 @@ import SectionHeader from "@/components/common/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  InstagramLogo,
-  LinkedinLogo,
-  Medal,
-  Stethoscope,
-  TwitterLogo,
-} from "@phosphor-icons/react";
+import { InstagramLogo, Medal, Stethoscope } from "@phosphor-icons/react";
 
 import { motion } from "framer-motion";
 
@@ -35,7 +29,7 @@ export default function LeadDoctorSection({
 
   qualification = "MS Orthopedics • Fellowship in Joint Replacement - Mumbai",
 
-  experience = "11+ Years",
+  experience = "10+ Years",
 
   specialization = "Bone, Joint & Spine Care",
 
@@ -138,10 +132,11 @@ export default function LeadDoctorSection({
 
                     {/* Socials */}
                     <div className="mt-6 flex flex-wrap items-center gap-3">
-                      {[InstagramLogo, LinkedinLogo, TwitterLogo].map((Icon, index) => (
+                      {[InstagramLogo].map((Icon, index) => (
                         <Link
                           key={index}
-                          href="#"
+                          href="https://www.instagram.com/doc.homy0911/?hl=en"
+                          target="_blank"
                           className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-xl transition-all duration-300 hover:bg-secondaryOrtho"
                         >
                           <Icon size={18} weight="fill" />

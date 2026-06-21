@@ -146,16 +146,18 @@ export default function WhyTrustUsSection() {
 
             {/* Bottom Pills */}
             <div className="mt-6 flex flex-wrap gap-3">
-              {["5000+ Surgeries", "98% Satisfaction", "Rehabilitation Programs"].map(
-                (item, index) => (
-                  <div
-                    key={index}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl"
-                  >
-                    <span className="text-xs font-semibold text-white">{item}</span>
-                  </div>
-                ),
-              )}
+              {[
+                "Advanced Orthopaedic Care",
+                "Patient-Centered Care",
+                "Rehabilitation Programs",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl"
+                >
+                  <span className="text-xs font-semibold text-white">{item}</span>
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -210,18 +212,18 @@ export default function WhyTrustUsSection() {
                 },
 
                 {
-                  value: "98%",
-                  label: "Patient Satisfaction",
+                  value: "100%",
+                  label: " Patient-Centered Care",
                 },
 
                 {
-                  value: "15k+",
+                  value: "100+",
                   label: "Happy Patients",
                 },
 
                 {
-                  value: "100%",
-                  label: "Personalized Care",
+                  value: "7+",
+                  label: "Facilities",
                 },
               ].map((item, index) => (
                 <motion.div

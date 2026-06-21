@@ -1,9 +1,7 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
-import { FormikHelpers } from "formik";
-import { useState } from "react";
-
+import { FormControl, MenuItem, Select } from "@mui/material";
 import {
   CaretDown,
   CheckCircle,
@@ -14,6 +12,8 @@ import {
   WarningCircle,
   X,
 } from "@phosphor-icons/react";
+import { FormikHelpers } from "formik";
+import { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -28,7 +28,7 @@ const appointmentSchema = Yup.object({
     .matches(/^[0-9]{10}$/, "Enter valid phone number")
     .required("Phone number is required"),
 
-  email: Yup.string().email("Invalid email address"),
+  email: Yup.string().email("Invalid email address").required("Email is required"),
 
   department: Yup.string().required("Please select treatment type"),
 });
@@ -59,26 +59,33 @@ export default function PremiumAppointmentForm() {
     try {
       setLoading(true);
 
+      const templateParams = {
+        fullName: values.fullName,
+        phone: values.phone,
+        email: values.email,
+        department: values.department,
+        message: values.message,
+        submissionDate: new Date().toLocaleString("en-IN"),
+      };
+
+      // Send inquiry to hospital
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        {
-          fullName: values.fullName,
+        process.env.NEXT_PUBLIC_SERVICEID!,
+        process.env.NEXT_PUBLIC_CONTACT_PAGE_TEMPLATE!,
+        templateParams,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY!,
+      );
 
-          phone: values.phone,
-
-          email: values.email,
-
-          department: values.department,
-
-          message: values.message,
-        },
-        "YOUR_PUBLIC_KEY",
+      // Send auto reply to patient
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICEID!,
+        process.env.NEXT_PUBLIC_REPLY_PAGE_TEMPLATE!,
+        templateParams,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY!,
       );
 
       setPopup({
         type: "success",
-
         message: "Appointment Request Sent Successfully",
       });
 
@@ -88,7 +95,6 @@ export default function PremiumAppointmentForm() {
 
       setPopup({
         type: "error",
-
         message: "Something went wrong. Please try again.",
       });
     } finally {
@@ -200,14 +206,6 @@ export default function PremiumAppointmentForm() {
 
           {/* Header */}
           <div className="relative text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-secondaryOrtho/10 px-4 py-2">
-              <div className="h-2 w-2 rounded-full bg-secondaryOrtho" />
-
-              <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-secondaryOrtho">
-                Appointment Booking
-              </span>
-            </div>
-
             <h2 className="mt-5 text-[2.2rem] font-black leading-[0.95] tracking-[-0.06em] text-primaryOrtho sm:text-[3rem]">
               Book Your
               <span className="text-secondaryOrtho"> Appointment</span>
@@ -304,33 +302,107 @@ export default function PremiumAppointmentForm() {
                     />
                   </div>
 
-                  {/* Dropdown */}
+                  {/* Treatment Dropdown */}
                   <div>
-                    <div className="relative">
-                      <Field
-                        as="select"
-                        name="department"
-                        className="h-16 w-full appearance-none rounded-[22px] border border-primaryOrtho/10 bg-[#f8fafc] px-5 pr-14 text-sm font-semibold text-primaryOrtho outline-none transition-all duration-300 focus:border-secondaryOrtho focus:bg-white"
-                      >
-                        <option value="">Select Treatment Type</option>
+                    <FormControl fullWidth>
+                      <Field name="department">
+                        {({ field, form }: any) => (
+                          <Select
+                            {...field}
+                            displayEmpty
+                            onChange={(e) => form.setFieldValue("department", e.target.value)}
+                            IconComponent={CaretDown}
+                            renderValue={(selected) => {
+                              if (!selected) {
+                                return (
+                                  <span
+                                    style={{
+                                      color: "rgba(17,34,78,0.35)",
+                                      fontWeight: 600,
+                                      fontSize: "14px",
+                                    }}
+                                  >
+                                    Select Treatment Type
+                                  </span>
+                                );
+                              }
 
-                        <option value="Joint Replacement">Joint Replacement</option>
+                              return selected as string;
+                            }}
+                            sx={{
+                              height: 64,
+                              borderRadius: "22px",
+                              backgroundColor: "#f8fafc",
 
-                        <option value="Sports Injury">Sports Injury</option>
+                              "& .MuiOutlinedInput-notchedOutline": {
+                                borderColor: "rgba(15,23,42,0.08)",
+                              },
 
-                        <option value="Fracture Care">Fracture Care</option>
+                              "&:hover .MuiOutlinedInput-notchedOutline": {
+                                borderColor: "rgba(248,123,27,0.5)",
+                              },
 
-                        <option value="Physiotherapy">Physiotherapy</option>
+                              "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                                borderColor: "#F87B1B",
+                                borderWidth: "2px",
+                              },
 
-                        <option value="Spine Treatment">Spine Treatment</option>
+                              "& .MuiSelect-select": {
+                                padding: "18px 20px",
+                                fontSize: "14px",
+                                fontWeight: 600,
+                                color: "var(--primaryOrtho)",
+                                display: "flex",
+                                alignItems: "center",
+                              },
+
+                              "& .MuiSvgIcon-root": {
+                                color: "rgba(17,34,78,0.4)",
+                              },
+                            }}
+                            MenuProps={{
+                              PaperProps: {
+                                sx: {
+                                  mt: 1,
+                                  borderRadius: "20px",
+                                  border: "1px solid rgba(15,23,42,0.06)",
+                                  boxShadow: "0 20px 60px rgba(15,23,42,0.12)",
+                                  overflow: "hidden",
+
+                                  "& .MuiMenuItem-root": {
+                                    minHeight: 50,
+                                    px: 2,
+                                    fontSize: "14px",
+                                    fontWeight: 600,
+                                    color: "var(--primaryOrtho)",
+                                    transition: "all .25s ease",
+                                  },
+
+                                  "& .MuiMenuItem-root:hover": {
+                                    backgroundColor: "rgba(248,123,27,0.08)",
+                                  },
+
+                                  "& .Mui-selected": {
+                                    backgroundColor: "rgba(248,123,27,0.12) !important",
+                                    color: "#F87B1B",
+                                  },
+                                },
+                              },
+                            }}
+                          >
+                            <MenuItem value="Joint Replacement">Joint Replacement</MenuItem>
+
+                            <MenuItem value="Sports Injury">Sports Injury</MenuItem>
+
+                            <MenuItem value="Fracture Care">Fracture Care</MenuItem>
+
+                            <MenuItem value="Physiotherapy">Physiotherapy</MenuItem>
+
+                            <MenuItem value="Spine Treatment">Spine Treatment</MenuItem>
+                          </Select>
+                        )}
                       </Field>
-
-                      <CaretDown
-                        size={18}
-                        weight="bold"
-                        className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-primaryOrtho/40"
-                      />
-                    </div>
+                    </FormControl>
 
                     <ErrorMessage
                       name="department"
@@ -367,7 +439,7 @@ export default function PremiumAppointmentForm() {
                   }}
                   type="submit"
                   disabled={loading}
-                  className="group mt-6 flex h-16 w-full items-center justify-center gap-3 rounded-[22px] bg-secondaryOrtho text-sm font-bold text-white shadow-[0_20px_45px_rgba(248,123,27,0.28)] transition-all duration-300 hover:-translate-y-1 disabled:opacity-70"
+                  className="group mt-6 cursor-pointer flex h-16 w-full items-center justify-center gap-3 rounded-[22px] bg-secondaryOrtho text-sm font-bold text-white shadow-[0_20px_45px_rgba(248,123,27,0.28)] transition-all duration-300 hover:-translate-y-1 disabled:opacity-70"
                 >
                   {loading ? "Submitting..." : "Confirm Appointment"}
 

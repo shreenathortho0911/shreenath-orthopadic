@@ -1,6 +1,7 @@
 import BreadcrumbSection from "@/components/common/BreadcrumbSection";
 import { StructuredData } from "@/components/seo/StructuredData";
 import AdvancedFacilitiesSection from "@/components/ui/facilities/AdvancedFacilitiesSection";
+import FacilitiesShowcase from "@/components/ui/facilities/FacilitiesShowcase";
 import { generateBreadcrumbSchema, generatePageMetadata } from "@/lib/metadata-generator";
 import type { Metadata } from "next";
 
@@ -24,6 +25,7 @@ const FacilitiesPage = () => {
         description="Modern facilities focused on orthopedic treatment and recovery."
       />
       <AdvancedFacilitiesSection />
+      <FacilitiesShowcase />
     </div>
   );
 };

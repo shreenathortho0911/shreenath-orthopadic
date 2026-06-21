@@ -187,7 +187,7 @@ const Navbar = () => {
 
             <div className="flex items-center gap-2.5 md:gap-3 shrink-0">
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919265666262"
                 aria-label="Call us"
                 className="md:hidden grid place-items-center w-10 h-10 rounded-full border-2 border-primaryOrtho/40 bg-transparent text-primaryOrtho hover:border-secondaryOrtho hover:text-secondaryOrtho transition-all duration-300 hover:scale-110"
               >
@@ -247,6 +247,7 @@ const Navbar = () => {
               width={140}
               height={50}
               className="w-[100px] sm:w-[130px] h-15 object-contain"
+              onClick={() => setMenuOpen(false)}
             />
 
             <button
@@ -336,6 +337,7 @@ const Navbar = () => {
             </nav>
             <Link
               href="/contact"
+              onClick={() => setMenuOpen(false)}
               className="group relative mt-5 flex flex-row gap-2 justify-between  w-60 items-center mx-auto overflow-hidden rounded-full bg-secondaryOrtho! px-7 py-4 text-sm font-semibold text-tertiaryOrtho shadow-[0_10px_30px_rgba(248,123,27,0.35)] transition-all duration-300 hover:scale-[1.03] md:text-base"
             >
               Contact Us

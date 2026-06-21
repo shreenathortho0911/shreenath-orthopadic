@@ -6,14 +6,14 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   {
-    value: 15,
+    value: 10,
     suffix: "+",
     title: "Years Experience",
     icon: Medal,
   },
 
   {
-    value: 25000,
+    value: 100,
     suffix: "+",
     title: "Successful Treatments",
     icon: Heartbeat,
@@ -27,9 +27,9 @@ const stats = [
   },
 
   {
-    value: 15,
+    value: 10,
     suffix: "+",
-    title: "Expert Surgeons",
+    title: "Years Experience",
     icon: UsersThree,
   },
 
@@ -41,9 +41,9 @@ const stats = [
   },
 
   {
-    value: 8,
+    value: 7,
     suffix: "+",
-    title: "Operation Theaters",
+    title: "Facilities",
     icon: Pulse,
   },
 ];
@@ -119,8 +119,7 @@ export default function WhyChooseUs() {
 
                   {/* Big Counter */}
                   <h3 className="text-5xl font-black leading-[0.95] tracking-[-0.06em] text-tertiaryOrtho sm:text-6xl lg:text-7xl xl:text-8xl">
-                    <Counter to={25} />
-                    k+
+                    <Counter to={100} />+
                   </h3>
 
                   {/* Heading */}
@@ -142,10 +141,10 @@ export default function WhyChooseUs() {
                   <div className="mt-7">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
-                        Patient Satisfaction
+                        Patient-Centered Care
                       </span>
 
-                      <span className="text-lg font-black text-secondaryOrtho">98%</span>
+                      <span className="text-lg font-black text-secondaryOrtho">100%</span>
                     </div>
 
                     <div className="h-[5px] overflow-hidden rounded-full bg-white/10">

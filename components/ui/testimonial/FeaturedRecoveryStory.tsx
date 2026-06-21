@@ -375,7 +375,7 @@ export default function FeaturedRecoveryStory() {
                       Recovery Progress
                     </span>
 
-                    <span className="text-sm font-black text-primaryOrtho">95%</span>
+                    <span className="text-sm font-black text-primaryOrtho">100%</span>
                   </div>
 
                   <div className="mt-4 h-3 overflow-hidden rounded-full bg-white">
@@ -384,7 +384,7 @@ export default function FeaturedRecoveryStory() {
                         width: 0,
                       }}
                       whileInView={{
-                        width: "95%",
+                        width: "100%",
                       }}
                       transition={{
                         duration: 1.2,

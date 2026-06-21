@@ -21,9 +21,9 @@ const features = [
   },
 
   {
-    title: "Expert Doctors",
+    title: "Expert Doctor",
     description:
-      "Highly experienced specialists in orthopedics, spine care, joint replacement, and rehabilitation.",
+      "Highly experienced specialist in orthopedics, spine care, joint replacement, and rehabilitation.",
     icon: Stethoscope,
   },
 
@@ -143,9 +143,9 @@ export default function HospitalIntroSection() {
 
                 {/* Floating Card */}
                 <div className="absolute bottom-5 left-5 rounded-2xl border border-white/15 bg-white/10 px-5 py-4 backdrop-blur-xl">
-                  <h4 className="text-3xl font-black text-white">15k+</h4>
+                  <h4 className="text-sm font-black text-white">Modern</h4>
 
-                  <p className="mt-1 text-sm text-white/80">Successful Treatments</p>
+                  <p className="mt-1  text-3xl text-white/80">Surgical Care</p>
                 </div>
               </div>
             </div>

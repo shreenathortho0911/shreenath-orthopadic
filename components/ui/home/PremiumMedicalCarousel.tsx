@@ -41,7 +41,7 @@ const slides = [
     subtitle: "Move Better. Live Pain Free.",
     description:
       "Modern robotic-assisted knee and hip replacement surgeries designed for faster recovery and long-term comfort.",
-    image: "/carousel/nine.png",
+    image: "/carousel/hip.png",
     badge: "Joint Replacement",
   },
 ];
@@ -247,13 +247,13 @@ export default function PremiumMedicalCarousel() {
                     >
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-semibold text-tertiaryOrtho/70">
-                          Patient Satisfaction
+                          Emergency Support
                         </span>
 
                         <div className="h-3 w-3 rounded-full bg-secondaryOrtho" />
                       </div>
 
-                      <h3 className="mt-4 text-6xl font-black text-tertiaryOrtho">98%</h3>
+                      <h3 className="mt-4 text-5xl font-black text-tertiaryOrtho">24&times;7</h3>
 
                       <div className="mt-6 h-2 overflow-hidden rounded-full bg-tertiaryOrtho/10">
                         <motion.div
@@ -286,11 +286,9 @@ export default function PremiumMedicalCarousel() {
                         </div>
 
                         <div>
-                          <h4 className="text-4xl font-black text-tertiaryOrtho">15k+</h4>
+                          <h4 className="text-4xl font-black text-tertiaryOrtho">Expert</h4>
 
-                          <p className="mt-1 text-sm text-tertiaryOrtho/70">
-                            Successful Treatments
-                          </p>
+                          <p className="mt-1 text-sm text-tertiaryOrtho/70">Orthopedic Care</p>
                         </div>
                       </div>
                     </motion.div>
@@ -330,7 +328,7 @@ export default function PremiumMedicalCarousel() {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`h-3 rounded-full transition-all duration-300 ${
+                className={`h-3 rounded-full cursor-pointer transition-all duration-300 ${
                   current === index
                     ? "w-12 bg-secondaryOrtho"
                     : "w-3 bg-tertiaryOrtho/40 hover:bg-tertiaryOrtho/70"

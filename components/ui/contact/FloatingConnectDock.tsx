@@ -23,7 +23,7 @@ const dockItems = [
 
     icon: PhoneCall,
 
-    href: "tel:+919876543210",
+    href: "tel:+919265666262",
 
     bg: "bg-primaryOrtho",
   },
@@ -35,7 +35,7 @@ const dockItems = [
 
     icon: WhatsappLogo,
 
-    href: "https://wa.me/919876543210",
+    href: "https://wa.me/919265666262",
 
     bg: "bg-[#25D366]",
   },
@@ -47,7 +47,7 @@ const dockItems = [
 
     icon: MapPin,
 
-    href: "https://maps.google.com",
+    href: "https://maps.app.goo.gl/fzyACX21NF2KdTby5",
 
     bg: "bg-secondaryOrtho",
   },
@@ -57,7 +57,7 @@ export default function ExpandableFloatingDock() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-4 left-1/2 z-[999] w-full max-w-max -translate-x-1/2 px-4">
+    <div className="fixed bottom-4 left-1/2  z-[999] w-full max-w-max -translate-x-1/2 px-4">
       <div className="relative flex items-center justify-center">
         {/* Expandable Dock */}
         <AnimatePresence>
@@ -117,6 +117,7 @@ export default function ExpandableFloatingDock() {
                       >
                         <Link
                           href={item.href}
+                          target="_blank"
                           className="group flex items-center gap-3 rounded-[22px] px-3 py-3 transition-all duration-300 hover:bg-white sm:px-4"
                         >
                           {/* Icon */}
@@ -160,7 +161,7 @@ export default function ExpandableFloatingDock() {
             y: -3,
           }}
           onClick={() => setOpen(!open)}
-          className="group relative flex h-16 items-center gap-3 overflow-hidden rounded-full border border-white/20 bg-primaryOrtho px-5 shadow-[0_20px_60px_rgba(15,23,42,0.22)] backdrop-blur-2xl"
+          className="group cursor-pointer relative flex h-16 items-center gap-3 overflow-hidden rounded-full border border-white/20 bg-primaryOrtho px-5 shadow-[0_20px_60px_rgba(15,23,42,0.22)] backdrop-blur-2xl"
         >
           {/* Glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-secondaryOrtho/20 via-transparent to-secondaryOrtho/20" />

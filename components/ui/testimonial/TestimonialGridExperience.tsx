@@ -5,62 +5,46 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    name: "Ramesh Patel",
-    initials: "RP",
+    name: "Yugant Panchal",
+    initials: "YP",
     treatment: "Knee Replacement",
-
     review:
-      "After my rehabilitation program, I can finally walk without pain. The entire recovery team was attentive and truly dedicated to my healing journey.",
-
+      "Excellent care and guidance throughout my treatment. Supportive staff, clean facilities, and a smooth recovery experience.",
     result: "Walking Comfort Restored",
-
     stat: "92%",
-
     statLabel: "Mobility Regained",
   },
 
   {
-    name: "Meera Shah",
-    initials: "MS",
+    name: "Nikhil Dhanula",
+    initials: "ND",
     treatment: "Spine Rehabilitation",
-
     review:
-      "Professional recovery guidance and structured rehabilitation improved my movement and daily comfort significantly.",
-
+      "Modern facilities, skilled doctors, and attentive care. My recovery was faster than expected, and the support was outstanding.",
     result: "Improved Flexibility",
-
-    stat: "87%",
-
+    stat: "95%",
     statLabel: "Pain Reduction",
   },
 
   {
-    name: "Amit Verma",
-    initials: "AV",
+    name: "Chaitanya Porania",
+    initials: "CP",
     treatment: "Sports Injury Recovery",
-
     review:
-      "The rehabilitation sessions rebuilt my strength and confidence to return to sports activities safely.",
-
+      "Professional doctor with excellent knowledge. The staff was friendly, supportive, and made the recovery process comfortable.",
     result: "Active Lifestyle Restored",
-
     stat: "6 Wks",
-
     statLabel: "Recovery Time",
   },
 
   {
-    name: "Kiran Joshi",
-    initials: "KJ",
+    name: "Samir Bhatiya",
+    initials: "SB",
     treatment: "Fracture Recovery",
-
     review:
-      "Supportive orthopedic specialists and personalized rehabilitation helped me regain mobility faster than expected.",
-
+      "Caring doctor and helpful team. They addressed all my concerns and ensured I felt confident throughout treatment.",
     result: "Full Mobility Restored",
-
     stat: "100%",
-
     statLabel: "Bone Healing",
   },
 ];
@@ -70,10 +54,12 @@ const testimonials = [
 function NavButton({
   onClick,
   direction,
+  className,
 }: {
   onClick: () => void;
 
   direction: "prev" | "next";
+  className: "cursor-pointer";
 }) {
   const isPrev = direction === "prev";
 
@@ -81,7 +67,7 @@ function NavButton({
     <button
       onClick={onClick}
       className={[
-        "flex h-11 w-11 items-center justify-center rounded-full transition-all duration-300",
+        "flex h-11 w-11 items-center cursor-pointer justify-center rounded-full transition-all duration-300",
 
         isPrev
           ? "border border-primaryOrtho/10 bg-white text-primaryOrtho hover:bg-primaryOrtho hover:text-white"
@@ -219,9 +205,9 @@ export default function PremiumTestimonials() {
 
           {/* Desktop Nav */}
           <div className="hidden items-center gap-3 sm:flex">
-            <NavButton onClick={prev} direction="prev" />
+            <NavButton onClick={prev} direction="prev" className="cursor-pointer" />
 
-            <NavButton onClick={next} direction="next" />
+            <NavButton onClick={next} direction="next" className="cursor-pointer" />
           </div>
         </div>
 
@@ -375,9 +361,9 @@ export default function PremiumTestimonials() {
 
                   {/* Mobile Nav */}
                   <div className="mt-8 flex items-center gap-3 sm:hidden">
-                    <NavButton onClick={prev} direction="prev" />
+                    <NavButton onClick={prev} direction="prev" className="cursor-pointer" />
 
-                    <NavButton onClick={next} direction="next" />
+                    <NavButton onClick={next} direction="next" className="cursor-pointer" />
                   </div>
                 </div>
 
@@ -435,7 +421,7 @@ export default function PremiumTestimonials() {
               key={i}
               onClick={() => setActiveIndex(i)}
               className={[
-                "h-1.5 rounded-full transition-all duration-300",
+                "h-1.5 cursor-pointer rounded-full transition-all duration-300",
 
                 i === activeIndex
                   ? "w-7 bg-primaryOrtho"

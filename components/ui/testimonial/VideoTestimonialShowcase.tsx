@@ -2,99 +2,104 @@
 
 import { useEffect, useState } from "react";
 
-import {
-  Bone,
-  Heartbeat,
-  Lightning,
-  PersonSimpleWalk,
-  Play,
-  Pulse,
-  X,
-} from "@phosphor-icons/react";
+import { Bone, Heartbeat, Lightning, Play, Pulse, X } from "@phosphor-icons/react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
 const videos = [
   {
-    patient: "Ramesh Patel",
+    patient: "ACL Partial Tear",
 
-    category: "Knee Replacement",
+    category: "Knee Ligament Injury",
 
-    treatment: "Advanced Knee Surgery",
+    treatment: "ACL Injury Management & Rehabilitation",
 
-    outcome: "Walking comfortably after recovery.",
+    outcome: "Improved knee stability, reduced swelling, and restored mobility.",
 
-    video: "/videos/testimonial-demo.mp4",
+    video: "/video/seven.mp4",
+
+    icon: Heartbeat,
+  },
+  {
+    patient: "Rotator Cuff Tear",
+
+    category: "Shoulder Surgery",
+
+    treatment: "Arthroscopic Rotator Cuff Repair",
+
+    outcome: "Restored shoulder strength and pain-free movement.",
+
+    video: "/video/one.mp4",
 
     icon: Heartbeat,
   },
 
   {
-    patient: "Meera Shah",
+    patient: "Grade 4 Knee Osteoarthritis",
 
-    category: "Spine Recovery",
+    category: "Joint Replacement",
 
-    treatment: "Spine Rehabilitation",
+    treatment: "Total Knee Replacement",
 
-    outcome: "Improved posture and flexibility.",
+    outcome: "Pain-free walking and improved knee mobility after surgery.",
 
-    video: "/videos/testimonial-demo.mp4",
+    video: "/video/two.mp4",
 
     icon: Pulse,
   },
 
   {
-    patient: "Amit Verma",
+    patient: "Neck of Femur Fracture",
 
-    category: "Sports Recovery",
+    category: "Hip Replacement",
 
-    treatment: "Sports Injury Therapy",
+    treatment: "Hemiarthroplasty Surgery",
 
-    outcome: "Returned to active lifestyle recovery.",
+    outcome: "Regained independent walking and daily mobility.",
 
-    video: "/videos/testimonial-demo.mp4",
+    video: "/video/three.mp4",
 
     icon: Lightning,
   },
 
   {
-    patient: "Kiran Joshi",
+    patient: "Neck of Femur Fracture",
 
-    category: "Fracture Recovery",
+    category: "Hip Trauma",
 
-    treatment: "Bone Rehabilitation",
+    treatment: "Hip Fracture Surgery",
 
-    outcome: "Restored mobility and confidence.",
+    outcome: "Walking independently after successful recovery.",
 
-    video: "/videos/testimonial-demo.mp4",
+    video: "/video/four.mp4",
 
     icon: Bone,
   },
 
   {
-    patient: "Suresh Patel",
+    patient: "Humerus Shaft Fracture",
 
-    category: "Mobility Recovery",
+    category: "Trauma Surgery",
 
-    treatment: "Senior Rehabilitation",
+    treatment: "Minimally Invasive Bridge Plating",
 
-    outcome: "Improved walking support and balance.",
+    outcome: "Achieved complete bone union with full arm movement.",
 
-    video: "/videos/testimonial-demo.mp4",
+    video: "/video/five.mp4",
 
-    icon: PersonSimpleWalk,
+    icon: Pulse,
   },
 
   {
-    patient: "Anjali Mehta",
+    patient: "Pediatric Monteggia Variant",
 
-    category: "Joint Recovery",
+    category: "Pediatric Trauma",
 
-    treatment: "Joint Rehabilitation",
+    treatment: "Monteggia Variant Fracture Management",
 
-    outcome: "Reduced pain and restored movement.",
+    outcome: "Restored elbow alignment and full arm function after treatment.",
 
-    video: "/videos/testimonial-demo.mp4",
+    video: "/video/six.mp4",
 
     icon: Pulse,
   },
@@ -215,7 +220,7 @@ export default function PremiumVideoTestimonials() {
                     backdrop-blur-2xl
 
                     text-left
-
+                    cursor-pointer
                     shadow-[0_18px_60px_rgba(17,34,78,0.06)]
 
                     transition-all duration-500
@@ -279,7 +284,7 @@ export default function PremiumVideoTestimonials() {
 
                           border border-white/10
 
-                          bg-white/10
+                          bg-secondaryOrtho/70
                           backdrop-blur-xl
 
                           px-4 py-2
@@ -287,7 +292,7 @@ export default function PremiumVideoTestimonials() {
                       >
                         <Icon size={15} weight="fill" className="text-secondaryOrtho" />
 
-                        <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-white">
+                        <span className="text-[11px]  font-bold uppercase tracking-[0.12em] text-white">
                           {item.category}
                         </span>
                       </div>
@@ -371,7 +376,7 @@ export default function PremiumVideoTestimonials() {
           absolute right-5 top-5 z-50
 
           flex h-12 w-12 items-center justify-center
-
+          cursor-pointer
           rounded-full
 
           border border-white/10
@@ -390,50 +395,40 @@ export default function PremiumVideoTestimonials() {
 
             {/* Video Wrapper */}
             <motion.div
-              initial={{
-                scale: 0.9,
-                opacity: 0,
-              }}
-              animate={{
-                scale: 1,
-                opacity: 1,
-              }}
-              exit={{
-                scale: 0.9,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 0.3,
-              }}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
               className="
-          relative z-10
+    relative z-10
 
-          w-full
-          max-w-6xl
+    h-[95vh]
+    w-auto
 
-          overflow-hidden
+    overflow-hidden
 
-          rounded-[32px]
+    rounded-[24px]
 
-          border border-white/10
+    border border-white/10
 
-          bg-black
+    bg-black
 
-          shadow-[0_40px_120px_rgba(0,0,0,0.45)]
-        "
+    shadow-[0_40px_120px_rgba(0,0,0,0.45)]
+  "
             >
-              {/* Video */}
               <video
                 controls
                 autoPlay
                 playsInline
                 className="
-            aspect-video
-            w-full
+      h-full
+      w-auto
 
-            bg-black
-            object-cover
-          "
+      max-w-[100vw]
+
+      object-contain
+      bg-black
+    "
               >
                 <source src={selectedVideo} type="video/mp4" />
               </video>
