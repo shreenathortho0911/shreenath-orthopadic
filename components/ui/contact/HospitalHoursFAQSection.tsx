@@ -47,10 +47,10 @@ const hospitalHours = [
 
 const faqData = [
   {
-    question: "Do you provide emergency orthopedic care?",
+    question: "Do you provide emergency Orthopaedic care?",
 
     answer:
-      "Yes, emergency orthopedic assistance is available for fractures, trauma injuries, and urgent mobility-related conditions.",
+      "Yes, emergency Orthopaedic assistance is available for fractures, trauma injuries, and urgent mobility-related conditions.",
   },
 
   {
@@ -131,7 +131,7 @@ export default function HospitalHoursFAQSection() {
 
             {/* Desc */}
             <p className="relative mt-3 max-w-md text-xs leading-relaxed text-white/70 sm:text-sm">
-              Check consultation timings and hospital availability for appointments and orthopedic
+              Check consultation timings and hospital availability for appointments and Orthopaedic
               care.
             </p>
 

@@ -41,7 +41,7 @@ const specialties = [
   {
     icon: FirstAid,
     title: "Trauma Care",
-    desc: "Emergency orthopedic support with rehabilitation care.",
+    desc: "Emergency Orthopaedic support with rehabilitation care.",
   },
 ];
 
@@ -63,12 +63,12 @@ export default function SpecialtiesSection() {
           badge="Our Specialties"
           title={
             <>
-              Specialized Orthopedic
+              Specialized Orthopaedic
               <br />
               <span className="text-secondaryOrtho">Treatments Designed Around Recovery</span>
             </>
           }
-          description="Comprehensive orthopedic expertise focused on mobility restoration and faster patient recovery."
+          description="Comprehensive Orthopaedic expertise focused on mobility restoration and faster patient recovery."
         />
 
         {/* Main Wrapper */}
@@ -164,7 +164,7 @@ export default function SpecialtiesSection() {
           {/* Left */}
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-secondaryOrtho">
-              Advanced Orthopedic Recovery
+              Advanced Orthopaedic Recovery
             </p>
 
             <h3 className="mt-2 text-xl font-black tracking-[-0.05em] text-white sm:text-2xl">

@@ -30,7 +30,7 @@ export default function OurStorySection() {
               <span className="text-secondaryOrtho">Restore Movement & Confidence</span>
             </>
           }
-          description="A journey driven by compassion, advanced orthopedic care, and a commitment to helping every patient live pain-free."
+          description="A journey driven by compassion, advanced Orthopaedic care, and a commitment to helping every patient live pain-free."
         />
 
         {/* Content */}
@@ -81,13 +81,13 @@ export default function OurStorySection() {
               {/* Story */}
               <div className="mt-6 space-y-5">
                 <p className="text-sm leading-relaxed text-primaryOrtho/65 sm:text-[15px]">
-                  Shreenath Orthopedic Hospital was founded with a simple mission — to provide
-                  advanced orthopedic care with compassion, precision, and trust.
+                  Shreenath Orthopaedic Hospital was founded with a simple mission — to provide
+                  advanced Orthopaedic care with compassion, precision, and trust.
                 </p>
 
                 <p className="text-sm leading-relaxed text-primaryOrtho/65 sm:text-[15px]">
                   What started as a dedicated vision to help patients recover faster has grown into
-                  a trusted orthopedic center known for personalized treatments and patient-first
+                  a trusted Orthopaedic center known for personalized treatments and patient-first
                   recovery care.
                 </p>
 
@@ -147,8 +147,8 @@ export default function OurStorySection() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-relaxed text-white/65">
-                  Deliver trusted orthopedic solutions with compassionate care, advanced technology,
-                  and long-term recovery support.
+                  Deliver trusted Orthopaedic solutions with compassionate care, advanced
+                  technology, and long-term recovery support.
                 </p>
 
                 <div className="mt-6 flex items-center gap-2">
@@ -201,7 +201,7 @@ export default function OurStorySection() {
 
                 <div className="mt-6 flex items-center gap-2">
                   <span className="text-xs font-semibold uppercase tracking-[0.18em] text-secondaryOrtho">
-                    Trusted Orthopedic Excellence
+                    Trusted Orthopaedic Excellence
                   </span>
 
                   <ArrowUpRight size={16} weight="bold" className="text-secondaryOrtho" />

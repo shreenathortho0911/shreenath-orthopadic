@@ -17,7 +17,7 @@ export default function BreadcrumbSection({
 
   currentPage,
 
-  description = "Advanced orthopedic treatments with expert doctors and modern recovery care.",
+  description = "Advanced Orthopaedic treatments with expert doctors and modern recovery care.",
 }: BreadcrumbSectionProps) {
   return (
     <section className="relative overflow-hidden bg-tertiaryOrtho pt-15 lg:pt-25 py-10">
@@ -55,7 +55,7 @@ export default function BreadcrumbSection({
                   Expert Care
                 </p>
 
-                <h4 className="text-sm font-bold text-white">Orthopedic Specialists</h4>
+                <h4 className="text-sm font-bold text-white">Orthopaedic Specialists</h4>
               </div>
             </div>
           </motion.div>
@@ -84,7 +84,7 @@ export default function BreadcrumbSection({
                 <Sparkle size={14} weight="fill" className="text-secondaryOrtho" />
 
                 <span className="text-[10px] font-bold tracking-widest  text-secondaryOrtho">
-                  Shreenath Orthopedic Hospital
+                  Shreenath Orthopaedic Hospital
                 </span>
               </motion.div>
 

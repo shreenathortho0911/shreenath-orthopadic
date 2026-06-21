@@ -22,7 +22,7 @@ export function RehabilitationContent() {
     <div className="mt-10">
       <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
-        title="Advanced Orthopedic Rehabilitation Care"
+        title="Advanced Orthopaedic Rehabilitation Care"
         currentPage="Rehab"
         description="Personalized rehab programs focused on strength, mobility, and faster recovery."
       />
@@ -39,8 +39,8 @@ export function RehabilitationContent() {
             <span className="text-secondaryOrtho"> Toward Restoring Movement</span>
           </>
         }
-        description="Personalized orthopedic rehabilitation programs designed to improve mobility and support long-term recovery."
-        floatingBadge="Orthopedic Recovery Care"
+        description="Personalized Orthopaedic rehabilitation programs designed to improve mobility and support long-term recovery."
+        floatingBadge="Orthopaedic Recovery Care"
         buttons={[
           {
             label: "Contact Us",

@@ -179,8 +179,8 @@ export default function PremiumVideoTestimonials() {
             </h2>
 
             <p className="mt-6 text-[15px] leading-relaxed text-slate-600">
-              Real orthopedic recovery journeys shared after successful treatment and rehabilitation
-              care.
+              Real Orthopaedic recovery journeys shared after successful treatment and
+              rehabilitation care.
             </p>
           </div>
 

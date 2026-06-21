@@ -59,12 +59,12 @@ export default function WhyRecoveryMatters() {
           badge="Recovery Importance"
           title={
             <>
-              Why Orthopedic Recovery
+              Why Orthopaedic Recovery
               <br />
               <span className="text-secondaryOrtho">Is Important</span>
             </>
           }
-          description="Recovery programs improve mobility, healing, flexibility, and long-term orthopedic strength."
+          description="Recovery programs improve mobility, healing, flexibility, and long-term Orthopaedic strength."
         />
 
         {/* Single Row Layout */}
@@ -145,17 +145,17 @@ export default function WhyRecoveryMatters() {
                   <p className="mt-4 text-sm leading-relaxed text-slate-500">
                     {
                       [
-                        "Restore smooth movement, walking balance, and everyday mobility with structured orthopedic rehabilitation support.",
+                        "Restore smooth movement, walking balance, and everyday mobility with structured Orthopaedic rehabilitation support.",
 
                         "Support faster healing progress through guided recovery programs focused on flexibility and controlled movement.",
 
-                        "Reduce muscle stiffness, improve flexibility, and enhance comfort during the orthopedic recovery process.",
+                        "Reduce muscle stiffness, improve flexibility, and enhance comfort during the Orthopaedic recovery process.",
 
-                        "Improve joint stability, body balance, and functional movement for better long-term orthopedic wellness.",
+                        "Improve joint stability, body balance, and functional movement for better long-term Orthopaedic wellness.",
 
                         "Rebuild strength, flexibility, posture, and movement confidence through advanced rehabilitation support.",
 
-                        "Enhance long-term recovery outcomes with continuous mobility improvement and orthopedic care supervision.",
+                        "Enhance long-term recovery outcomes with continuous mobility improvement and Orthopaedic care supervision.",
                       ][index]
                     }
                   </p>

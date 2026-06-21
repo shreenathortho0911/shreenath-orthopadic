@@ -46,15 +46,15 @@ export default function SurgeonRecoveryCare() {
       <div className="container-wrapper relative">
         {/* Header */}
         <SectionHeader
-          badge="Orthopedic Recovery Care"
+          badge="Orthopaedic Recovery Care"
           title={
             <>
               Recovery Guided By
               <br />
-              <span className="text-secondaryOrtho">Orthopedic Specialists</span>
+              <span className="text-secondaryOrtho">Orthopaedic Specialists</span>
             </>
           }
-          description="Specialized post-surgical recovery programs focused on mobility restoration, healing progress, and long-term orthopedic wellness."
+          description="Specialized post-surgical recovery programs focused on mobility restoration, healing progress, and long-term Orthopaedic wellness."
         />
 
         {/* Main Layout */}
@@ -97,7 +97,7 @@ export default function SurgeonRecoveryCare() {
                   </div>
 
                   <h3 className="text-2xl md:text-3xl font-black leading-tight tracking-[-0.03em] text-primaryOrtho">
-                    Personalized Orthopedic Recovery Supervision
+                    Personalized Orthopaedic Recovery Supervision
                   </h3>
                 </div>
               </div>
@@ -105,10 +105,10 @@ export default function SurgeonRecoveryCare() {
               {/* Description */}
               <div className="relative mt-7 space-y-4">
                 {[
-                  "Post-surgery monitoring by experienced orthopedic specialists.",
+                  "Post-surgery monitoring by experienced Orthopaedic specialists.",
                   "Continuous recovery progress evaluation for safer healing.",
                   "Personalized mobility plans focused on strength and flexibility.",
-                  "Expert orthopedic care focused on long-term recovery.",
+                  "Expert Orthopaedic care focused on long-term recovery.",
                 ].map((item, i) => (
                   <motion.div
                     key={i}

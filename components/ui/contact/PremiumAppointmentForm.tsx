@@ -212,7 +212,7 @@ export default function PremiumAppointmentForm() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-primaryOrtho/60 sm:text-[15px]">
-              Fill out the form below and our orthopedic team will contact you shortly.
+              Fill out the form below and our Orthopaedic team will contact you shortly.
             </p>
           </div>
 

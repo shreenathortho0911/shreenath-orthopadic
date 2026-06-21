@@ -106,7 +106,7 @@ export default function PremiumTestimonials() {
 
   return (
     <section className="relative overflow-hidden bg-tertiaryOrtho py-24">
-      {/* ───── Premium Orthopedic Background ───── */}
+      {/* ───── Premium Orthopaedic Background ───── */}
 
       {/* Main Glow */}
       <div className="absolute left-[-10%] top-[-10%] h-[420px] w-[420px] rounded-full bg-secondaryOrtho/10 blur-[120px]" />
@@ -325,7 +325,7 @@ export default function PremiumTestimonials() {
                         <h3 className="text-lg font-black text-primaryOrtho">{active.name}</h3>
 
                         <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-secondaryOrtho">
-                          Orthopedic Patient
+                          Orthopaedic Patient
                         </p>
                       </div>
                     </div>

@@ -27,13 +27,13 @@ export default function LeadDoctorSection({
 
   name = "Dr. Homy J. Modi",
 
-  qualification = "MS Orthopedics • Fellowship in Joint Replacement - Mumbai",
+  qualification = "MS Orthopaedic • Fellowship in Joint Replacement - Mumbai",
 
   experience = "10+ Years",
 
   specialization = "Bone, Joint & Spine Care",
 
-  description = "Dedicated to advanced orthopedic treatments with compassionate patient care, precision surgery, and long-term mobility recovery.",
+  description = "Dedicated to advanced Orthopaedic treatments with compassionate patient care, precision surgery, and long-term mobility recovery.",
 }: DoctorSectionProps) {
   return (
     <section className="section-padding relative overflow-hidden bg-[#f8fafc]">
@@ -46,7 +46,7 @@ export default function LeadDoctorSection({
 
       <div className="container-wrapper relative z-10">
         <SectionHeader
-          badge="Lead Orthopedic Specialist"
+          badge="Lead Orthopaedic Specialist"
           title={
             <>
               Meet The Expert Behind
@@ -54,7 +54,7 @@ export default function LeadDoctorSection({
               <span className="text-secondaryOrtho">Trusted Patient Care</span>
             </>
           }
-          description="Experienced orthopedic expertise focused on recovery, mobility, and compassionate treatment."
+          description="Experienced Orthopaedic expertise focused on recovery, mobility, and compassionate treatment."
         />
 
         {/* Main Wrapper */}
@@ -173,7 +173,7 @@ export default function LeadDoctorSection({
                   <div className="h-2 w-2 rounded-full bg-secondaryOrtho" />
 
                   <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-secondaryOrtho">
-                    Lead Orthopedic Specialist
+                    Lead Orthopaedic Specialist
                   </span>
                 </div>
 
@@ -217,7 +217,7 @@ export default function LeadDoctorSection({
                     <h4 className="mt-4 text-lg font-black text-white">Philosophy</h4>
 
                     <p className="mt-2 text-sm leading-relaxed text-white/70">
-                      Recovery-driven orthopedic care with precision, trust, and compassion.
+                      Recovery-driven Orthopaedic care with precision, trust, and compassion.
                     </p>
                   </div>
                 </div>

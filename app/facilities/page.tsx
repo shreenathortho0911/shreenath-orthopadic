@@ -20,9 +20,9 @@ const FacilitiesPage = () => {
     <div className="mt-10">
       <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
-        title="Orthopedic Facilities"
+        title="Orthopaedic Facilities"
         currentPage="Facilities"
-        description="Modern facilities focused on orthopedic treatment and recovery."
+        description="Modern facilities focused on Orthopaedic treatment and recovery."
       />
       <AdvancedFacilitiesSection />
       <FacilitiesShowcase />

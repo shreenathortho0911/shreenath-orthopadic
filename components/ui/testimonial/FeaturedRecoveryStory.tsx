@@ -23,7 +23,7 @@ const steps = [
   {
     step: "02",
     title: "Advanced Treatment",
-    description: "Orthopedic diagnosis and personalized recovery planning.",
+    description: "Orthopaedic diagnosis and personalized recovery planning.",
   },
 
   {
@@ -77,7 +77,7 @@ export default function FeaturedRecoveryStory() {
           </h2>
 
           <p className="mt-6 text-[15px] leading-relaxed text-slate-600">
-            A complete orthopedic recovery journey focused on restoring mobility and supporting
+            A complete Orthopaedic recovery journey focused on restoring mobility and supporting
             long-term movement.
           </p>
         </div>
@@ -187,7 +187,7 @@ export default function FeaturedRecoveryStory() {
                     </h3>
 
                     <p className="mt-5 hidden md:block max-w-lg text-sm leading-relaxed text-white/70">
-                      Personalized orthopedic rehabilitation focused on flexibility, strength, and
+                      Personalized Orthopaedic rehabilitation focused on flexibility, strength, and
                       mobility restoration.
                     </p>
                   </div>

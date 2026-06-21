@@ -46,12 +46,12 @@ export default function WhyTrustUsSection() {
           badge="Why Patients Trust Us"
           title={
             <>
-              Advanced Orthopedic Care
+              Advanced Orthopaedic Care
               <br />
               <span className="text-secondaryOrtho">Designed Around Recovery</span>
             </>
           }
-          description="Trusted orthopedic expertise with advanced treatments, personalized care, and long-term mobility solutions."
+          description="Trusted Orthopaedic expertise with advanced treatments, personalized care, and long-term mobility solutions."
         />
 
         {/* Main Layout */}
@@ -90,14 +90,14 @@ export default function WhyTrustUsSection() {
                 </div>
 
                 <h3 className="mt-4 max-w-lg text-2xl font-black  text-white sm:text-3xl">
-                  Orthopedic Excellence Focused On Faster Recovery
+                  Orthopaedic Excellence Focused On Faster Recovery
                 </h3>
               </div>
             </div>
 
             {/* Description */}
             <p className="relative mt-5 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-[15px]">
-              Advanced orthopedic treatments, robotic procedures, and rehabilitation-focused
+              Advanced Orthopaedic treatments, robotic procedures, and rehabilitation-focused
               recovery care designed around every patient’s mobility and long-term wellness.
             </p>
 

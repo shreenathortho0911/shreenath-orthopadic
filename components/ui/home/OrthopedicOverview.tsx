@@ -23,14 +23,14 @@ const features = [
   {
     title: "Expert Doctor",
     description:
-      "Highly experienced specialist in orthopedics, spine care, joint replacement, and rehabilitation.",
+      "Highly experienced specialist in Orthopaedic, spine care, joint replacement, and rehabilitation.",
     icon: Stethoscope,
   },
 
   {
     title: "Advanced Facilities",
     description:
-      "Modern infrastructure and state-of-the-art orthopedic treatment technologies for better recovery.",
+      "Modern infrastructure and state-of-the-art Orthopaedic treatment technologies for better recovery.",
     icon: Buildings,
   },
 ];
@@ -72,7 +72,7 @@ export default function HospitalIntroSection() {
 
                   {/* Text */}
                   <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-primaryOrtho sm:text-xs sm:tracking-[0.22em] lg:text-sm">
-                    Shreenath Orthopedic Hospital
+                    Shreenath Orthopaedic Hospital
                   </span>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function HospitalIntroSection() {
               className="max-w-3xl text-2xl font-black leading-tight text-primaryOrtho sm:text-4xl md:text-5xl "
             >
               Shreenath
-              <span className="text-secondaryOrtho"> Orthopedic & Joint Care </span>
+              <span className="text-secondaryOrtho"> Orthopaedic & Joint Care </span>
               Hospital
             </motion.h2>
 
@@ -99,7 +99,7 @@ export default function HospitalIntroSection() {
               viewport={{ once: true }}
               className="mt-6 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base lg:text-lg"
             >
-              Our orthopedic center combines advanced treatments, experienced surgeons, and modern
+              Our Orthopaedic center combines advanced treatments, experienced surgeons, and modern
               rehabilitation programs to provide comprehensive care for bones, joints, spine, and
               sports injuries. With state-of-the-art infrastructure and patient-focused care, we
               help patients recover faster and live pain free.
@@ -136,7 +136,7 @@ export default function HospitalIntroSection() {
           >
             <div className="relative overflow-hidden rounded-[34px] border border-white/20 bg-white p-3 shadow-[0_25px_70px_rgba(17,34,78,0.12)]">
               <div className="relative h-[320px] overflow-hidden rounded-[26px] sm:h-[420px]">
-                <Image src="/home.png" alt="Orthopedic Care" fill className="object-cover" />
+                <Image src="/home.png" alt="Orthopaedic Care" fill className="object-cover" />
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primaryOrtho/50 via-transparent to-transparent" />

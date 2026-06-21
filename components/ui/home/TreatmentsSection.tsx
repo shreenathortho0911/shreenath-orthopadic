@@ -46,7 +46,7 @@ export default function TreatmentsSection() {
       <div className="container-wrapper relative">
         {/* TOP */}
         <SectionHeader
-          badge="Orthopedic Treatments"
+          badge="Orthopaedic Treatments"
           title={
             <>
               Precision Treatments
@@ -54,7 +54,7 @@ export default function TreatmentsSection() {
               <span className="text-secondaryOrtho">For Bones, Joints & Spine</span>
             </>
           }
-          description="Specialized orthopedic solutions designed with advanced surgical techniques, modern rehabilitation, and patient-focused recovery care."
+          description="Specialized Orthopaedic solutions designed with advanced surgical techniques, modern rehabilitation, and patient-focused recovery care."
         />
         {/* Medical Treatments Architecture */}
         <div className="mt-14">
@@ -181,7 +181,7 @@ export default function TreatmentsSection() {
                             />
 
                             <span className="text-[9px] font-bold uppercase tracking-[0.22em] text-secondaryOrtho">
-                              Orthopedic
+                              Orthopaedic
                             </span>
                           </div>
 

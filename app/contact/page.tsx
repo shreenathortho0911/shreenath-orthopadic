@@ -26,7 +26,7 @@ const ContactPage = () => {
       <BreadcrumbSection
         title="Let's Connect For Better Care"
         currentPage="Contact Us"
-        description="Connect with our orthopedic experts for appointments and patient support."
+        description="Connect with our Orthopaedic experts for appointments and patient support."
       />
       <SmartPainSelectorSection />
       <FloatingConnectDock />

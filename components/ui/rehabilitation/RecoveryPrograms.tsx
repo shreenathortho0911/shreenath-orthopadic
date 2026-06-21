@@ -76,7 +76,7 @@ export default function RecoveryProgramsSection() {
               <span className="text-secondaryOrtho">Tailored To Your Condition</span>
             </>
           }
-          description="Advanced orthopedic rehabilitation programs focused on restoring mobility, rebuilding strength, and supporting long-term recovery."
+          description="Advanced Orthopaedic rehabilitation programs focused on restoring mobility, rebuilding strength, and supporting long-term recovery."
         />
 
         {/* Cards */}

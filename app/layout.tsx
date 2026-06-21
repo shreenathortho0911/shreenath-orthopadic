@@ -21,6 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   ...generatePageMetadata({ page: "home" }),
+
   metadataBase: new URL(SITE_CONFIG.url),
   authors: [
     {

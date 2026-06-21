@@ -67,7 +67,7 @@ export default function RecoveryTransformationTimeline() {
           </h2>
 
           <p className="mt-6 text-[15px] leading-relaxed text-slate-600">
-            A structured orthopedic recovery journey focused on movement, rehabilitation, and
+            A structured Orthopaedic recovery journey focused on movement, rehabilitation, and
             long-term mobility improvement.
           </p>
         </div>
@@ -259,7 +259,7 @@ export default function RecoveryTransformationTimeline() {
 
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-secondaryOrtho">
-                Guided Orthopedic Recovery
+                Guided Orthopaedic Recovery
               </p>
 
               <h4 className="mt-1 text-sm font-black text-primaryOrtho">

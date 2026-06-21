@@ -113,7 +113,7 @@ export default function WhyChooseUs() {
                     <div className="h-[2px] w-12 rounded-full bg-secondaryOrtho" />
 
                     <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-secondaryOrtho sm:text-xs">
-                      Trusted Orthopedic Excellence
+                      Trusted Orthopaedic Excellence
                     </span>
                   </div>
 
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
 
                   {/* Heading */}
                   <h4 className="mt-4 text-2xl font-black  text-tertiaryOrtho sm:text-3xl lg:text-4xl">
-                    Successful Orthopedic
+                    Successful Orthopaedic
                     <br />
                     <span className="text-secondaryOrtho">Treatments & Recoveries</span>
                   </h4>
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
                 {/* Right */}
                 <div className="max-w-md">
                   <p className="text-sm leading-relaxed text-white/70 sm:text-base">
-                    Combining modern orthopedic technology, expert surgeons, precision treatments,
+                    Combining modern Orthopaedic technology, expert surgeons, precision treatments,
                     and patient-first recovery experiences.
                   </p>
 

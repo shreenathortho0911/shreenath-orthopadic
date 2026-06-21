@@ -45,7 +45,7 @@ export default function RecoveryPhilosophySection() {
               <span className="text-secondaryOrtho"> Treatment</span>
             </>
           }
-          description="A patient-focused orthopedic approach designed around healing, mobility, and long-term wellness."
+          description="A patient-focused Orthopaedic approach designed around healing, mobility, and long-term wellness."
         />
 
         {/* Main Layout */}
@@ -88,8 +88,8 @@ export default function RecoveryPhilosophySection() {
             {/* Text */}
             <div className="relative mt-5 space-y-4">
               <p className="text-sm leading-relaxed text-white/70 sm:text-[15px]">
-                At Shreenath Orthopedic Hospital, recovery is not limited to surgery alone. We focus
-                on restoring movement, reducing pain, and rebuilding confidence.
+                At Shreenath Orthopaedic Hospital, recovery is not limited to surgery alone. We
+                focus on restoring movement, reducing pain, and rebuilding confidence.
               </p>
 
               <p className="text-sm leading-relaxed text-white/70 sm:text-[15px]">
@@ -158,7 +158,7 @@ export default function RecoveryPhilosophySection() {
                       </h4>
 
                       <p className="mt-1 text-sm text-primaryOrtho/60">
-                        Advanced orthopedic care focused on recovery and long-term wellness.
+                        Advanced Orthopaedic care focused on recovery and long-term wellness.
                       </p>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ export default function RecoveryPhilosophySection() {
             {/* Bottom Compact Note */}
             <div className="rounded-[24px] border border-primaryOrtho/10 bg-secondaryOrtho/5 p-4">
               <p className="text-sm leading-relaxed text-primaryOrtho/70">
-                Our recovery philosophy combines advanced orthopedic treatment with
+                Our recovery philosophy combines advanced Orthopaedic treatment with
                 rehabilitation-focused care designed around mobility, comfort, and pain-free living.
               </p>
             </div>

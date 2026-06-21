@@ -113,7 +113,7 @@ export default function InsuranceSupportSection() {
 
               {/* Description */}
               <p className="relative mt-5 max-w-lg text-sm leading-relaxed text-white/70 sm:text-[15px]">
-                Making orthopedic treatment more accessible with insurance assistance, flexible EMI
+                Making Orthopaedic treatment more accessible with insurance assistance, flexible EMI
                 options, and complete patient guidance from consultation to recovery.
               </p>
 

@@ -69,7 +69,7 @@ const painAreas = [
     specialist: "Joint Replacement Expert",
 
     description:
-      "Precision orthopedic solutions for knee pain, arthritis, sports injuries, and advanced joint replacement procedures focused on restoring mobility.",
+      "Precision Orthopaedic solutions for knee pain, arthritis, sports injuries, and advanced joint replacement procedures focused on restoring mobility.",
 
     badges: ["Arthritis Care", "Joint Replacement", "Sports Recovery"],
 
@@ -84,7 +84,7 @@ const painAreas = [
     specialist: "Emergency Trauma Team",
 
     description:
-      "Immediate orthopedic emergency support for fractures, accidents, trauma injuries, and recovery-focused rehabilitation care with rapid treatment response.",
+      "Immediate Orthopaedic emergency support for fractures, accidents, trauma injuries, and recovery-focused rehabilitation care with rapid treatment response.",
 
     badges: ["Fracture Support", "Emergency Care", "Rapid Recovery"],
 
@@ -143,7 +143,7 @@ export default function SmartPainSelectorSection() {
 
               {/* Desc */}
               <p className="mt-3 max-w-md text-sm leading-relaxed text-primaryOrtho/60">
-                Select your pain area to discover the right orthopedic care and specialist support.
+                Select your pain area to discover the right Orthopaedic care and specialist support.
               </p>
 
               {/* Selector */}

@@ -22,7 +22,7 @@ const slides = [
     description:
       "Comprehensive orthopedic treatments focused on restoring mobility, reducing pain, and helping patients return to active living.",
     image: "/carousel/seven.png",
-    badge: "Orthopedics",
+    badge: "Orthopaedic",
   },
 
   {

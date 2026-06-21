@@ -19,7 +19,7 @@ const TreatmentsPage = () => {
     <div className="mt-20">
       <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
-        title="Advanced Orthopedic Treatment Solutions"
+        title="Advanced Orthopaedic Treatment Solutions"
         currentPage="Treatment"
         description="Specialized care focused on pain relief, recovery, and better mobility."
       />

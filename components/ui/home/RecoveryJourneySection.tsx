@@ -9,7 +9,7 @@ const steps = [
   {
     id: "01",
     title: "Consultation",
-    description: "Expert orthopedic evaluation",
+    description: "Expert Orthopaedic evaluation",
     icon: Stethoscope,
   },
 
@@ -61,7 +61,7 @@ export default function RecoveryJourneySection() {
               <span className="text-secondaryOrtho">Pain-Free Movement</span>
             </>
           }
-          description="A seamless orthopedic treatment experience designed for precision care, faster recovery, and long-term mobility."
+          description="A seamless Orthopaedic treatment experience designed for precision care, faster recovery, and long-term mobility."
         />
 
         {/* Premium Journey Wrapper */}

@@ -18,7 +18,7 @@ const facilityFeatures = [
     title: "Modern Infrastructure",
 
     description:
-      "Well-designed orthopedic spaces equipped with modern medical technology and patient-focused treatment environments.",
+      "Well-designed Orthopaedic spaces equipped with modern medical technology and patient-focused treatment environments.",
 
     icon: Buildings,
   },
@@ -27,7 +27,7 @@ const facilityFeatures = [
     title: "Surgical Precision",
 
     description:
-      "Advanced surgical systems supporting accurate orthopedic procedures and enhanced treatment outcomes.",
+      "Advanced surgical systems supporting accurate Orthopaedic procedures and enhanced treatment outcomes.",
 
     icon: ShieldCheck,
   },
@@ -51,10 +51,10 @@ const facilityFeatures = [
   },
 
   {
-    title: "Advanced Orthopedic Systems",
+    title: "Advanced Orthopaedic Systems",
 
     description:
-      "Integrated orthopedic technologies supporting diagnostics, treatment planning, and recovery monitoring.",
+      "Integrated Orthopaedic technologies supporting diagnostics, treatment planning, and recovery monitoring.",
 
     icon: Heartbeat,
   },
@@ -63,7 +63,7 @@ const facilityFeatures = [
     title: "Comprehensive Support",
 
     description:
-      "Complete orthopedic assistance from consultation and surgery to rehabilitation and long-term recovery care.",
+      "Complete Orthopaedic assistance from consultation and surgery to rehabilitation and long-term recovery care.",
 
     icon: FirstAidKit,
   },
@@ -96,10 +96,10 @@ export default function AdvancedFacilitiesSection() {
             <>
               Advanced Facilities Designed
               <br />
-              <span className="text-secondaryOrtho">Around Orthopedic Excellence</span>
+              <span className="text-secondaryOrtho">Around Orthopaedic Excellence</span>
             </>
           }
-          description="Modern orthopedic infrastructure focused on surgical precision, patient comfort, rehabilitation, and advanced recovery care."
+          description="Modern Orthopaedic infrastructure focused on surgical precision, patient comfort, rehabilitation, and advanced recovery care."
         />
 
         {/* Main Layout */}
@@ -188,7 +188,7 @@ export default function AdvancedFacilitiesSection() {
                   <div className="h-[2px] w-10 rounded-full bg-secondaryOrtho transition-all duration-500 group-hover:w-16" />
 
                   <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-secondaryOrtho">
-                    Orthopedic Care
+                    Orthopaedic Care
                   </span>
                 </div>
               </motion.div>

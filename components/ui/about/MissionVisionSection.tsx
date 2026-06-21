@@ -8,15 +8,15 @@ const content = [
   {
     icon: Heartbeat,
     label: "Our Mission",
-    title: "Patient-First Recovery & Orthopedic Excellence",
+    title: "Patient-First Recovery & Orthopaedic Excellence",
     description:
-      "Our mission is to provide compassionate orthopedic treatments focused on pain relief, mobility restoration, and faster recovery through advanced medical expertise and personalized patient care.",
+      "Our mission is to provide compassionate Orthopaedic treatments focused on pain relief, mobility restoration, and faster recovery through advanced medical expertise and personalized patient care.",
   },
 
   {
     icon: Sparkle,
     label: "Our Vision",
-    title: "Trusted Destination For Advanced Orthopedic Care",
+    title: "Trusted Destination For Advanced Orthopaedic Care",
     description:
       "We aim to become a trusted center for bone, joint, and spine care known for innovation, modern treatment solutions, and long-term patient wellness.",
   },
@@ -26,7 +26,7 @@ const content = [
     label: "Our Goal",
     title: "Helping Patients Move Better Every Day",
     description:
-      "Our goal is to improve quality of life by helping every patient regain confidence, movement, and strength with complete orthopedic support and rehabilitation care.",
+      "Our goal is to improve quality of life by helping every patient regain confidence, movement, and strength with complete Orthopaedic support and rehabilitation care.",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function MissionVisionSection() {
               <span className="text-secondaryOrtho">Recovery, Trust & Better Living</span>
             </>
           }
-          description="Focused on advanced orthopedic care with compassion, innovation, and long-term patient recovery."
+          description="Focused on advanced Orthopaedic care with compassion, innovation, and long-term patient recovery."
         />
 
         {/* Main Content */}
@@ -112,8 +112,8 @@ export default function MissionVisionSection() {
                         </h4>
 
                         <p className="mt-3 text-sm leading-relaxed text-primaryOrtho/60">
-                          Delivering advanced orthopedic solutions with personalized care, precision
-                          treatments, and trusted recovery support.
+                          Delivering advanced Orthopaedic solutions with personalized care,
+                          precision treatments, and trusted recovery support.
                         </p>
                       </div>
 

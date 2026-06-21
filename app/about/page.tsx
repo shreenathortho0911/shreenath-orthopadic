@@ -26,9 +26,9 @@ const AboutPage = () => {
     <div className="mt-10">
       <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
-        title="About Shreenath Orthopedic Hospital"
+        title="About Shreenath Orthopaedic Hospital"
         currentPage="About Us"
-        description="Trusted orthopedic care with experienced specialists and modern treatments."
+        description="Trusted Orthopaedic care with experienced specialists and modern treatments."
       />
       <OurStorySection />
       <MissionVisionSection />

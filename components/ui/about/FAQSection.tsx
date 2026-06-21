@@ -7,19 +7,19 @@ import Image from "next/image";
 
 const faqData = [
   {
-    question: "When should I see an orthopedic specialist?",
+    question: "When should I see an Orthopaedic specialist?",
     answer:
-      "You should consult an orthopedic specialist if you experience persistent joint pain, back pain, stiffness, sports injuries, fractures, or difficulty in movement affecting daily activities.",
+      "You should consult an Orthopaedic specialist if you experience persistent joint pain, back pain, stiffness, sports injuries, fractures, or difficulty in movement affecting daily activities.",
   },
 
   {
-    question: "Is surgery always necessary for orthopedic problems?",
+    question: "Is surgery always necessary for Orthopaedic problems?",
     answer:
-      "No, many orthopedic conditions can be treated through medications, physiotherapy, rehabilitation programs, and minimally invasive treatments before considering surgery.",
+      "No, many Orthopaedic conditions can be treated through medications, physiotherapy, rehabilitation programs, and minimally invasive treatments before considering surgery.",
   },
 
   {
-    question: "How long does orthopedic recovery usually take?",
+    question: "How long does Orthopaedic recovery usually take?",
     answer:
       "Recovery time depends on the condition and treatment type. Minor injuries may recover within weeks, while surgeries and rehabilitation can take several months for complete healing.",
   },
@@ -51,10 +51,10 @@ export default function FAQSection() {
             <>
               Answers To Common
               <br />
-              <span className="text-secondaryOrtho">Orthopedic Concerns</span>
+              <span className="text-secondaryOrtho">Orthopaedic Concerns</span>
             </>
           }
-          description="Helping patients understand treatments, recovery, rehabilitation, and orthopedic care with confidence."
+          description="Helping patients understand treatments, recovery, rehabilitation, and Orthopaedic care with confidence."
         />
 
         {/* Main Layout */}

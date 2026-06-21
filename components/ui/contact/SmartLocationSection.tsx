@@ -76,7 +76,7 @@ export default function CompactContactSection() {
                 </h2>
 
                 <p className="mt-4 max-w-md text-sm leading-relaxed text-primaryOrtho/60">
-                  Connect with our orthopedic team for consultation booking, patient guidance, and
+                  Connect with our Orthopaedic team for consultation booking, patient guidance, and
                   quick assistance.
                 </p>
               </div>

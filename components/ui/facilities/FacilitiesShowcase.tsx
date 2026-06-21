@@ -13,7 +13,7 @@ const facilities = [
     title: "Modular Operation Theater",
     image: "/facilities/ot.jpeg",
     description:
-      "Advanced modular operation theaters designed for orthopedic procedures with sterile environments, precision workflow, and patient safety standards.",
+      "Advanced modular operation theaters designed for Orthopaedic procedures with sterile environments, precision workflow, and patient safety standards.",
     features: [
       "Laminar Air Flow",
       "Advanced Monitoring Systems",
@@ -26,7 +26,7 @@ const facilities = [
     title: "FDP C-Arm System",
     image: "/facilities/carm.jpeg",
     description:
-      "Real-time imaging technology that assists surgeons with enhanced precision during orthopedic and trauma procedures.",
+      "Real-time imaging technology that assists surgeons with enhanced precision during Orthopaedic and trauma procedures.",
     features: [
       "Live Imaging",
       "High Resolution Guidance",
@@ -39,7 +39,7 @@ const facilities = [
     title: "Digital X-Ray",
     image: "/facilities/xray.jpeg",
     description:
-      "Modern digital radiography providing faster diagnostics, clearer imaging, and efficient orthopedic assessments.",
+      "Modern digital radiography providing faster diagnostics, clearer imaging, and efficient Orthopaedic assessments.",
     features: [
       "Rapid Reporting",
       "High Image Clarity",
@@ -52,7 +52,7 @@ const facilities = [
     title: "Trauma & Emergency Care",
     image: "/facilities/room1.jpg",
     description:
-      "Dedicated trauma care facilities for fractures, accidents, and emergency orthopedic interventions.",
+      "Dedicated trauma care facilities for fractures, accidents, and emergency Orthopaedic interventions.",
     features: [
       "24/7 Emergency Care",
       "Fracture Management",
@@ -86,7 +86,7 @@ const facilities = [
     title: "ICU & HDU Care",
     image: "/facilities/room2.jpg",
     description:
-      "Dedicated intensive and high-dependency care units providing continuous monitoring and support for post-operative orthopedic patients.",
+      "Dedicated intensive and high-dependency care units providing continuous monitoring and support for post-operative Orthopaedic patients.",
     features: [
       "24/7 Monitoring",
       "Critical Care Support",
@@ -130,7 +130,7 @@ export default function FacilitiesSection() {
             <>
               Advanced Infrastructure Built For
               <br />
-              <span className="text-secondaryOrtho">Orthopedic Excellence</span>
+              <span className="text-secondaryOrtho">Orthopaedic Excellence</span>
             </>
           }
           description="Explore our modern facilities designed to support precision treatment, patient comfort, and faster recovery."

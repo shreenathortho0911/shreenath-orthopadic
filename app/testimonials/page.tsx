@@ -24,7 +24,7 @@ const TestimonialsPage = () => {
       <BreadcrumbSection
         title="Patient Experiences & Recovery Stories"
         currentPage="Reviews"
-        description="Real recovery stories from our orthopedic patients."
+        description="Real recovery stories from our Orthopaedic patients."
       />
       <FeaturedRecoveryStory />
       <VideoTestimonialShowcase />

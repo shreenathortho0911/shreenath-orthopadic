@@ -17,7 +17,7 @@ const recoverySteps = [
   {
     step: "01",
     title: "Consultation & Assessment",
-    description: "Recovery evaluation by orthopedic experts",
+    description: "Recovery evaluation by Orthopaedic experts",
     icon: Stethoscope,
   },
 
@@ -69,7 +69,7 @@ export default function RecoveryJourneyTimeline() {
               <span className="text-secondaryOrtho">Journey Timeline</span>
             </>
           }
-          description="A structured orthopedic rehabilitation journey designed for safer healing, mobility restoration, and long-term recovery."
+          description="A structured Orthopaedic rehabilitation journey designed for safer healing, mobility restoration, and long-term recovery."
         />
 
         {/* Timeline */}
