@@ -4,14 +4,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 
-import {
-  ArrowUpRight,
-  CaretUpIcon,
-  MapPin,
-  PhoneCall,
-  WhatsappLogo,
-  X,
-} from "@phosphor-icons/react";
+import { ArrowUpRight, CaretUpIcon, MapPin, PhoneCall, X } from "@phosphor-icons/react";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -28,17 +21,17 @@ const dockItems = [
     bg: "bg-primaryOrtho",
   },
 
-  {
-    title: "WhatsApp",
+  // {
+  //   title: "WhatsApp",
 
-    subTitle: "Quick Connect",
+  //   subTitle: "Quick Connect",
 
-    icon: WhatsappLogo,
+  //   icon: WhatsappLogo,
 
-    href: "https://wa.me/919265666262",
+  //   href: "https://wa.me/919265666262",
 
-    bg: "bg-[#25D366]",
-  },
+  //   bg: "bg-[#25D366]",
+  // },
 
   {
     title: "Directions",
@@ -161,10 +154,10 @@ export default function ExpandableFloatingDock() {
             y: -3,
           }}
           onClick={() => setOpen(!open)}
-          className="group cursor-pointer relative flex h-16 items-center gap-3 overflow-hidden rounded-full border border-white/20 bg-primaryOrtho px-5 shadow-[0_20px_60px_rgba(15,23,42,0.22)] backdrop-blur-2xl"
+          className="group cursor-pointer relative flex h-16 items-center gap-3 overflow-hidden rounded-full border border-cyan-300/30 bg-gradient-to-r from-[#11224e] via-[#0f4c75] to-[#11224e] px-5 shadow-[0_20px_60px_rgba(15,76,117,0.35)] backdrop-blur-2xl transition-all duration-300 hover:shadow-[0_20px_80px_rgba(15,76,117,0.55)]"
         >
           {/* Glow */}
-          <div className="absolute inset-0 bg-gradient-to-r from-secondaryOrtho/20 via-transparent to-secondaryOrtho/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
           {/* Icon */}
 

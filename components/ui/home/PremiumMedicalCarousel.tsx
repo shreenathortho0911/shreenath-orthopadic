@@ -16,6 +16,15 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     id: 1,
+    title: "Sports Injury Center",
+    subtitle: "Get Back To Peak Performance",
+    description:
+      "Specialized care for ligament injuries, fractures, muscle tears, and sports rehabilitation with advanced recovery programs.",
+    image: "/carousel/eight.png",
+    badge: "Sports Medicine",
+  },
+  {
+    id: 2,
     title: "Orthopedic Excellence",
     subtitle: "Advanced Knee, Hip & Spine Care",
     smallSubtitle: "Trusted Orthopedic Specialists",
@@ -23,16 +32,6 @@ const slides = [
       "Comprehensive orthopedic treatments focused on restoring mobility, reducing pain, and helping patients return to active living.",
     image: "/carousel/seven.png",
     badge: "Orthopaedic",
-  },
-
-  {
-    id: 2,
-    title: "Sports Injury Center",
-    subtitle: "Get Back To Peak Performance",
-    description:
-      "Specialized care for ligament injuries, fractures, muscle tears, and sports rehabilitation with advanced recovery programs.",
-    image: "/carousel/eight.png",
-    badge: "Sports Medicine",
   },
 
   {
