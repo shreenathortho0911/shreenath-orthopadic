@@ -1,5 +1,6 @@
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
+import WhatsAppFloatingButton from "@/components/common/WhatsAppFloatingButton";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { generatePageMetadata } from "@/lib/metadata-generator";
 import { LOCAL_BUSINESS_SCHEMA, ORGANIZATION_SCHEMA, SITE_CONFIG } from "@/lib/seo-config";
@@ -75,6 +76,7 @@ export default function RootLayout({
           <Navbar />
           <QueryProvider>{children}</QueryProvider>
           <Footer />
+          <WhatsAppFloatingButton />
         </PreloaderWrapper>
       </body>
     </html>

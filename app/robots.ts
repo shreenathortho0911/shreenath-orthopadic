@@ -25,7 +25,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 1,
       },
     ],
-    sitemap: "https://shreenathorthopedic.com/sitemap.xml",
-    host: "https://shreenathorthopedic.com",
+    sitemap: "https://shreenathorthopaedichospital.in//sitemap.xml",
+    host: "https://shreenathorthopaedichospital.in/",
   };
 }

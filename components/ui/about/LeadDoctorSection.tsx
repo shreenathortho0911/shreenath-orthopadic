@@ -3,8 +3,9 @@
 import SectionHeader from "@/components/common/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
-import { InstagramLogo, Medal, Stethoscope } from "@phosphor-icons/react";
+import { InstagramLogo, Medal, Stethoscope, X } from "@phosphor-icons/react";
 
 import { motion } from "framer-motion";
 
@@ -35,8 +36,9 @@ export default function LeadDoctorSection({
 
   description = "Dedicated to advanced Orthopaedic treatments with compassionate patient care, precision surgery, and long-term mobility recovery.",
 }: DoctorSectionProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <section className="section-padding relative overflow-hidden bg-[#f8fafc]">
+    <section className="section-padding cursor-pointer relative overflow-hidden bg-[#f8fafc]">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute left-[-10%] top-0 h-72 w-72 rounded-full bg-secondaryOrtho/10 blur-3xl" />
@@ -58,7 +60,10 @@ export default function LeadDoctorSection({
         />
 
         {/* Main Wrapper */}
-        <div className="mt-10 overflow-hidden rounded-[40px] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.08)]">
+        <div
+          onClick={() => setIsModalOpen(true)}
+          className="mt-10 overflow-hidden rounded-[40px] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.08)]"
+        >
           <div className="grid lg:grid-cols-2">
             {/* LEFT SIDE */}
             <motion.div
@@ -238,6 +243,104 @@ export default function LeadDoctorSection({
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div
+          className="fixed  inset-0 z-[9999] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="
+        relative
+        w-full
+        max-w-4xl
+        hide-scrollbar
+        max-h-[90vh]
+        overflow-y-auto
+        rounded-[32px]
+        bg-white
+        shadow-2xl
+      "
+          >
+            {/* Header */}
+            <div className="sticky top-0 z-10 flex items-center  justify-between border-b bg-white px-5 py-4 sm:px-8">
+              <div>
+                <h3 className="text-xl font-black text-primaryOrtho">Professional Profile</h3>
+
+                <p className="mt-1 text-sm text-primaryOrtho/60">
+                  Additional credentials & achievements
+                </p>
+              </div>
+
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-secondaryOrtho/80 transition hover:bg-secondaryOrtho"
+              >
+                <X size={20} weight="bold" className="text-white" />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="space-y-8 p-5 sm:p-8">
+              {/* Education */}
+              <div>
+                <h4 className="mb-3 text-lg font-black text-primaryOrtho">Education</h4>
+
+                <ul className="space-y-2 text-sm text-primaryOrtho/70">
+                  <li>MBBS – Government Medical College, Surat</li>
+                  <li>MS Orthopaedics – AMC MET Medical College, Ahmedabad</li>
+                  <li>FIJR Fellowship in Joint Replacement – Mumbai</li>
+                </ul>
+              </div>
+
+              {/* Publications */}
+              <div>
+                <h4 className="mb-3 text-lg font-black text-primaryOrtho">Research Publications</h4>
+
+                <ul className="space-y-3 text-sm text-primaryOrtho/70">
+                  <li>Talus Neck Fracture with Open Reduction & Internal Fixation</li>
+
+                  <li>Functional & Radiological Outcome in Humerus Shaft Fractures</li>
+
+                  <li>Retrograde Nailing vs Distal Femur Locking Plate Study</li>
+                </ul>
+              </div>
+
+              {/* Professional Experience */}
+              <div>
+                <h4 className="mb-3 text-lg font-black text-primaryOrtho">
+                  Professional Experience
+                </h4>
+
+                <ul className="space-y-3 text-sm text-primaryOrtho/70">
+                  <li>Senior Residency – Sheth L.G. Hospital, Ahmedabad</li>
+
+                  <li>Joint Replacement Fellowship – Global & Lilavati Hospital, Mumbai</li>
+
+                  <li>Assistant Professor – Narendra Modi Medical College, Ahmedabad</li>
+                </ul>
+              </div>
+
+              {/* Conferences */}
+              <div>
+                <h4 className="mb-3 text-lg font-black text-primaryOrtho">
+                  Conferences & Academic Activities
+                </h4>
+
+                <ul className="space-y-3 text-sm text-primaryOrtho/70">
+                  <li>GOACON Annual Conference</li>
+
+                  <li>Joint International Conference</li>
+
+                  <li>WIROC 2023 Research Presentation</li>
+
+                  <li>DOT 2020 Knee Arthroplasty Conference Faculty</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
