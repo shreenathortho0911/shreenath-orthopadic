@@ -16,7 +16,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
 
 const TreatmentsPage = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-10">
       <StructuredData schema={breadcrumbSchema} />
       <BreadcrumbSection
         title="Advanced Orthopaedic Treatment Solutions"

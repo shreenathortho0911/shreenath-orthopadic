@@ -23,7 +23,7 @@ export async function generateMetadata({
         title: blog.title || "Blog Post",
         description: blog.excerpt || blog.summary || "Read our latest orthopedic health article.",
         type: "article",
-        url: `https://shreenathorthopedic.com/blog/${id}`,
+        url: `https://shreenathorthopedic.in/blog/${id}`,
         images: [
           {
             url: blog.image || "/og-image.jpg",
@@ -40,7 +40,7 @@ export async function generateMetadata({
         images: [blog.image || "/og-image.jpg"],
       },
       alternates: {
-        canonical: `https://shreenathorthopedic.com/blog/${id}`,
+        canonical: `https://shreenathorthopedic.in/blog/${id}`,
       },
     };
   } catch (error) {

@@ -16,6 +16,8 @@ interface BlogItem {
   title: string;
   published: string;
   content: string;
+  excerpt?: string;
+  summary?: string;
   images?: BlogImage[];
 }
 
@@ -32,7 +34,14 @@ export default function BlogListing() {
 
   // Clean HTML
   const cleanHTML = (html: string): string => {
+    if (!html) return "";
+
     return html
+      .replace(/<!--[\s\S]*?-->/g, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<head[\s\S]*?<\/head>/gi, " ")
+      .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
       .replace(/<[^>]+>/g, " ")
       .replace(/&nbsp;/g, " ")
       .replace(/&amp;/g, "&")
@@ -57,7 +66,7 @@ export default function BlogListing() {
           <div className="absolute bottom-[-200px] left-[-100px] w-[400px] h-[400px] md:w-[450px] md:h-[450px] rounded-full bg-primaryOrtho/5 blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-5 md:px-6 lg:px-8">
+        <div className="relative max-w-9xl mx-auto px-5 md:px-6 lg:px-8">
           <div className="mt-16 md:mt-24 flex items-center justify-center min-h-[300px]">
             <div className="flex flex-col items-center gap-4">
               <div className="w-14 h-14 rounded-full border-4 border-primaryOrtho border-t-secondaryOrtho animate-spin" />
@@ -123,7 +132,8 @@ export default function BlogListing() {
               extractImage(blog.content) ||
               "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop";
 
-            const description = getShortDescription(blog.content);
+            const descriptionSource = blog.excerpt || blog.summary || blog.content;
+            const description = getShortDescription(descriptionSource);
 
             return (
               <motion.div
