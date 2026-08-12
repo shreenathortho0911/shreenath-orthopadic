@@ -99,6 +99,25 @@ export default function BlogDetails({ blogId }: BlogDetailsProps) {
 
         img {
           height: auto;
+          pointer-events: none !important;
+          cursor: default !important;
+        }
+
+        a,
+        a *,
+        button,
+        button *,
+        input,
+        textarea,
+        select,
+        area {
+          pointer-events: none !important;
+          cursor: default !important;
+        }
+
+        a {
+          text-decoration: none !important;
+          color: inherit !important;
         }
 
         * {
@@ -107,6 +126,21 @@ export default function BlogDetails({ blogId }: BlogDetailsProps) {
       `;
 
       doc.head?.appendChild(style);
+
+      doc.querySelectorAll("a, button, area, input, textarea, select").forEach((element) => {
+        element.setAttribute("aria-disabled", "true");
+        element.setAttribute("tabindex", "-1");
+        element.removeAttribute("href");
+        element.removeAttribute("onclick");
+        (element as HTMLElement).style.pointerEvents = "none";
+        (element as HTMLElement).style.cursor = "default";
+      });
+
+      doc.querySelectorAll("img").forEach((image) => {
+        image.setAttribute("draggable", "false");
+        image.style.pointerEvents = "none";
+        image.style.cursor = "default";
+      });
 
       if (doc.body && "ResizeObserver" in window) {
         const observer = new ResizeObserver(() => {
